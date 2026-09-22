@@ -1,0 +1,21 @@
+[project]
+name = "ml-proj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kushal", email = "adhikari.kushal3336@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.3",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+ml-proj = "ml_proj:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
